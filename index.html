@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Fotografia ślubna Maria Pajek</title>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0;" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="description" content="Wykonany przeze mnie reportaż ślubny, to zapis cudownych chwil i emocji ze ślubu oraz wesela, by stworzyć dla Państwa piękną pamiątkę na całe życie.">
+  <meta name="keywords" content="fotografia, ślub, wesele, fotograf ślubny, reportaż, małżonkowie, żona, mąż, narzeczeni,
+państwo młodzi, event, usługi foto, zdjęcia weselne, plener ślubny, sesja poślubna, błogosławieństo, portret, sesja narzeczeńska,
+Wrocław, dolnośląskie, magiczny ślub" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png">
+
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="components/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="components/animatescroll.js"></script>
+  <script type="text/javascript" src="components/jquery.color-2.1.2.min.js"></script>
+  <script type="text/javascript" src="components/portfolio.pack.min.js"></script>
+  <script type="text/javascript" src="components/contact.js"></script>
+  <script type="text/javascript" src="JS/Navigation.js"></script>
+  <script type="text/javascript" src="JS/Portfolio.js"></script>
+
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a class="nav-button" onclick="menuClickAction('body');">HOME</a></li>
+      <li><a class="nav-button" onclick="menuClickAction('#portfolio')">PORTFOLIO</a></li>
+      <li><a class="nav-button" onclick="menuClickAction('#offer');">OFERTA</a></li>
+      <li><a class="nav-button" onclick="menuClickAction('#about-me');">O MNIE</a></li>
+      <li><a class="nav-button" onclick="menuClickAction('#contact');">KONTAKT</a></li>
+    </ul>
+  </nav>
+</header>
+<div id="logo-content">
+  <span id="top-logo-text">
+    <p class="autumn-text-white" style="font-size: 60pt; margin: 0;">Maria Pajek</p>
+    <span id="bottom-logo-text"><p class="lato-regular-text" style=" font-size: 20pt;  margin: 0; letter-spacing: 3pt;">FOTOGRAFIA ŚLUBNA</p></span>
+  </span>
+</div>
+<div class="main-container">
+  <section id="portfolio" class="content-white">
+    <p class="autumn-text-dark" >Portfolio</p>
+    <div class="portfolio-div"><a href="#" onclick="LoadPortfolio('#gallery0',0); return false;"><img class="portfolio-img" src="images/portfolio_1.png" /></a><p class="lato-regular-text-dark">PRZYGOTOWANIA</p></div>
+    <div class="portfolio-div"><a href="#" onclick="LoadPortfolio('#gallery1',1); return false;"><img class="portfolio-img" src="images/portfolio_2.png" /></a><p class="lato-regular-text-dark">CEREMONIA ŚLUBNA</p></div>
+    <div class="portfolio-div"><a href="#" onclick="LoadPortfolio('#gallery2',2); return false;"><img class="portfolio-img" src="images/portfolio_3.png" /></a><p class="lato-regular-text-dark">WESELE</p></div>
+    <div class="portfolio-div"><a href="#" onclick="LoadPortfolio('#gallery3',3); return false;"><img class="portfolio-img" src="images/portfolio_4.png" /></a><p class="lato-regular-text-dark">SESJA PLENEROWA</p></div>
+    <br />
+    <div id="gallery-main">
+
+      <div id="gallery0">
+      </div>
+    <div id="gallery1">
+    </div>
+      <div id="gallery2">
+      </div>
+      <div id="gallery3">
+      </div>
+    </div>
+   </section>
+    <section class="darkblue-back" id="offer">
+      <p class="autumn-text-white">Oferta</p>
+      <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <thead>
+          <tr>
+            <th></th>
+            <th>Pakiet Brązowy</th>
+            <th>Pakiet Srebrny</th>
+            <th>Pakiet Złoty</th>
+            <th>Pakiet Platynowy</th>
+          </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tbody>
+          <tr>
+            <td>Przygotowania do ślubu</td>
+            <td><i class="material-icons">clear</i></td>
+            <td><i class="material-icons">clear</i> </td>
+            <td><i class="material-icons">done</i></td>
+            <td><i class="material-icons">done</i></td>
+          </tr>
+          <tr>
+            <td>Ślub, życzenia, zdjęcia grupowe</td>
+            <td><i class="material-icons">done</i></td>
+            <td><i class="material-icons">done</i></td>
+            <td><i class="material-icons">done</i></td>
+            <td><i class="material-icons">done</i></td>
+          </tr>
+          <tr>
+            <td>Wesele(do północy/oczepin)</td>
+            <td><i class="material-icons">done</i></td>
+            <td><i class="material-icons">done</i></td>
+            <td><i class="material-icons">done</i></td>
+            <td><i class="material-icons">done</i></td>
+          </tr>
+          <tr>
+            <td>Sesja poślubna w inny dzień</td>
+            <td><i class="material-icons">clear</i></td>
+            <td><i class="material-icons">done</i></td>
+            <td><i class="material-icons">done</i></td>
+            <td><i class="material-icons">done</i></td>
+          </tr>
+          <tr>
+            <td>Fotoalbum</td>
+            <td><i class="material-icons">clear</i></td>
+            <td><i class="material-icons">clear</i></td>
+            <td><i class="material-icons">clear</i></td>
+            <td><i class="material-icons">done</i></td>
+          </tr>
+          <tr>
+            <td>Ilość obrobionych zdjęć</td>
+            <td>100</td>
+            <td>150</td>
+            <td>200</td>
+            <td>300</td>
+          </tr>
+         </tbody>
+        </table>
+      </div>
+    </section>
+  <div id="about-me">
+    <section class="content-white">
+      <div id="about-image"></div>
+      <p class="autumn-text-dark">O mnie</p>
+      <p class="lato-regular-text-dark">Fotografia to moja pasja od 7 lat. Z początku moje zainteresowanie nią opierało się jedynie na zdjęciach z codziennych spacerów i podróży, później zajęłam się fotografią portretową, a następnie fotografią modową. Zaczęłam wykonywać sesje osobom prywatnym, oraz współpracować z agencjami modelingowymi. Obecnie zajmuję się każdym rodzajem fotografii, jednak szczególnie pokochałam portrety. Wrażliwe spojrzenie na człowieka staram się oddawać również w fotografii ślubnej. Każdy ślub, czy sesja poślubna jest wydarzeniem pozwalającym na uchwycenie niecodziennych emocji malujących się na twarzach zakochanych.</p>
+      <p class="lato-regular-text-dark">Pozwólcie mi uczestniczyć w tak ważnym dla Was dniu,<br /> a ja swoją pracą, włożonym sercem, zaangażowaniem,,<br /> stworzę dla Was pamiątkę na całe życie</p>
+      <p class="lato-regular-text-dark">Serdecznie zapraszam Państwa do współpracy.</p>
+    </section>
+  </div>
+  <section class="darkblue-back" id="contact">
+    <p class="autumn-text-white" style="margin-bottom: 30px;">Kontakt</p>
+    <img class="contact-img" src="images/contact_icons.png" />
+    <p class="lato-regular-text">MARIA PAJEK</p>
+    <p class="lato-regular-text">530 129 392</p>
+    <p class="lato-regular-text">maria.pajek.mp@gmail.com</p>
+    <a href="https://www.facebook.com/fotografiaslubna.mariapajek/"><img src="images/fb.png"/></a>
+    <br />
+    <form id="form">
+      <p id="returnmessage" class="lato-regular-text"></p>
+      <input type="text" placeholder="Imię" id="firstName" />
+      <input type="text" placeholder="Nazwisko" id="secondName" />
+      <input type="email" placeholder="Email" id="email" />
+      <input type="number" placeholder="Numer telefonu" id="telephone" />
+      <textarea cols="30" rows="4" placeholder="Treść wiadomości" id="message" ></textarea><br />
+      <input type="button" id="submit" value="WYŚLIJ" />
+    </form>
+    </section>
+  </div>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

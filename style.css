@@ -1,0 +1,278 @@
+/* app css stylesheet */
+@font-face {
+  font-family:"AutumnInNovember";
+  src: url("fonts/autumn-in-november.regular.ttf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+  font-family: "LatoBold";
+  src: url("fonts/Lato-Bold.ttf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family: "LatoItalic";
+    src: url("fonts/Lato-Italic.ttf") /* TTF file for CSS3 browsers */
+}
+@font-face {
+    font-family: "LatoRegular";
+    src: url("fonts/Lato-Regular.ttf");
+}
+/*:root {*/
+    /*--dark-theme: #201f47;*/
+    /*--light-theme: #8782ac;*/
+    /*--white-theme: white;*/
+/*}*/
+.autumn-text-dark {
+    font-family: AutumnInNovember;
+    font-size: 30pt;
+    color: #201f47;
+}
+.autumn-text-white {
+    font-family: AutumnInNovember;
+    font-size: 30pt;
+    color: white;
+}
+.lato-italic-text {
+    font-family: LatoItalic;
+    font-style: italic;
+    color: #201f47;
+}
+.lato-regular-text {
+    font-family: LatoRegular;
+    font-size: 12pt;
+    color: white;
+}
+.lato-regular-text-dark {
+    font-family: LatoRegular;
+    font-size: 12pt;
+    color: #201f47;
+}
+
+body,html {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+
+}
+#logo-content {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/main_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    text-align: center;
+}
+#top-logo-text{
+    display: table-cell;
+    vertical-align: middle;
+}
+#bottom-logo-text{
+    display: inline-block;
+    border-bottom: 2px solid white;
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+nav {
+  margin: 0 auto;
+  padding-top: 25px;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  /*background: rgba(255,255,255,0.8);*/
+  text-align: center;
+  letter-spacing: 1px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+  display: inline;
+  text-align: center;
+  margin-right: 5%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.main-container {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.nav-button {
+  font-family: LatoBold;
+  font-size: 10pt;
+  color: white;
+  text-decoration: none;
+}
+.nav-button:hover {
+  color: #8782ac !important;
+}
+#about-image{
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(images/about_me.png) no-repeat center;
+  background-size: cover;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+
+}
+#about-me {
+    margin: 0 auto;
+    width: 60%;
+}
+.content-white {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.darkblue-back {
+    width: 100%;
+    background-color: #201f47;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#offer {
+    display: inline-block;
+}
+#foot-content-child {
+  margin: 0 auto;
+  width: 50%;
+}
+
+form {
+    margin: 0 auto;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+input {
+    margin-bottom: 2%;
+    margin-left: 2%;
+    width: 35%;
+    height: 25px;
+    border: none;
+    color: white;
+    border-bottom: 1px solid white;
+    background-color: #201f47;
+    font-family: LatoRegular;
+    font-size: 10pt;
+}
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+textarea::-webkit-input-placeholder{
+    font-family: LatoRegular;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+textarea {
+    font-family: LatoRegular;
+    font-size: 10pt;
+    border: none;
+    background-color: #201f47;
+    border-bottom: 1px solid white;
+    resize: none;
+    margin-left: 2%;
+    width: 72%;
+    color: white;
+
+}
+.contact-hr {
+    border: none;
+    width: 80px;
+    height: 2px;
+    background-color: white;
+}
+.contact-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type=button] {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 40px;
+    padding: 12px 15px 11px !important;
+    font-family: LatoRegular;
+    font-weight: bold;
+    background-color: white;
+    color: #201f47;
+    border: 2px solid #201f47;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+}
+input[type=button]:hover {
+    color: white;
+    background-color: #201f47;
+    border: 2px solid white;
+}
+.portfolio-div {
+    width: 200px;
+    display: inline-block;
+    margin-left: 30px;
+}
+.portfolio-img {
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+}
+.portfolio-img:hover {
+    opacity: 0.7;
+}
+
+/*Table Style */
+table{
+    border: none;
+    text-align: center;
+    width:100%;
+    table-layout: fixed;
+}
+.tbl-header{
+    display: inline-block;
+    text-align: center;
+    border-bottom: solid 3px rgba(255,255,255,0.1);
+    width: 80%;
+}
+.tbl-content{
+    display: inline-block;
+    width: 80%;
+    overflow-x:auto;
+    margin-top: 0;
+
+}
+th{
+    background-color: #201f47;
+    border: none;
+    padding: 20px 15px;
+    font-family: LatoBold;
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+
+}
+td{
+    border: none;
+    padding: 15px;
+    vertical-align:middle;
+    font-family: LatoRegular;
+    font-size: 9pt;
+    color: white;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+    visibility: visible;
+}
+
+
